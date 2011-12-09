@@ -1,7 +1,7 @@
 Touchr
 =============
 
-A simple app to demonstrate [Sencha Touch 2](http://www.sencha.com/products/touch/), with a Yahoo Music integration using [YQL](http://developer.yahoo.com/yql).
+A simple app to demonstrate [Sencha Touch 2](http://www.sencha.com/products/touch/), with Flickr integration using [YQL](http://developer.yahoo.com/yql).
 
 * MVC architecture
 * Customized JSONP proxy that consumes YQL queries
