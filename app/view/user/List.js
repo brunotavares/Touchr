@@ -1,24 +1,21 @@
 Ext.define('TR.view.user.List', {
-    extend: 'Ext.Container',
+    extend: 'Ext.dataview.DataView',
     alias: 'widget.userlist',
     config: {
-        layout: 'fit',
-        title: 'Users',
+        title: 'User',
         iconCls: 'user',
+        store: 'Users',
+        itemTpl: '<img src="http://src.sencha.io/{[Ext.Viewport.getOrientation()]}/{photo_url}" />',
         iconMask: true,
         items: [{
             xtype: 'toolbar',
             docked: 'top',
             ui: 'light',
-            layout: 'fit',
             items: [{
                 xtype: 'textfield',
-                placeHolder: 'Search by user name...'
+                placeHolder: 'Search by user name...',
+                flex: 1
             }]
-        },{
-            xtype: 'dataview',
-            store: 'Users',
-            itemTpl: '<img src="http://src.sencha.io/{[Ext.Viewport.getOrientation()]}/{photo_url}" />'
         }]
     }
 });

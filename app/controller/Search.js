@@ -1,29 +1,24 @@
 Ext.define('TR.controller.Search', {
     extend: 'Ext.app.Controller',
-    stores: ['Search'],
-    views: ['search.List'],
-    
-    init: function() {
-        var me = this;
-        
-        me.control({
+    config: {
+        control: {
             'searchlist > toolbar > textfield': {
-                change: me.onSearchChange,
-                clearicontap: me.onSearchChange
+                change: 'onSearchChange',
+                clearicontap: 'onSearchChange'
             }
-        });
-        me.callParent(arguments);
+        }
     },
     
     onSearchChange: function(textfield) {
-        var store = this.getSearchStore(),
+        var store = Ext.getStore('Search'),
             value = Ext.String.trim(textfield.getValue());
-            
+
         if(Ext.isEmpty(value)) {
             store.removeAll();
         } else {
-            store.filters.clear();
+            store.clearFilter(true);
             store.filter('query', value);
+            store.load();
         }
     }
 });

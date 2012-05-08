@@ -1,24 +1,21 @@
 Ext.define('TR.view.search.List', {
-    extend: 'Ext.Container',
+    extend: 'Ext.dataview.DataView',
     alias: 'widget.searchlist',
     config: {
-        layout: 'fit',
         title: 'Search',
         iconCls: 'search',
+        store: 'Search',
+        itemTpl: '<img src="http://src.sencha.io/{[Ext.Viewport.getOrientation()]}/{photo_url}" />',
         iconMask: true,
         items: [{
             xtype: 'toolbar',
             docked: 'top',
             ui: 'light',
-            layout: 'fit',
             items: [{
                 xtype: 'textfield',
-                placeHolder: 'Search by keywords...'
+                placeHolder: 'Search by keywords...',
+                flex: 1
             }]
-        },{
-            xtype: 'dataview',
-            store: 'Search',
-            itemTpl: '<img src="http://src.sencha.io/{[Ext.Viewport.getOrientation()]}/{photo_url}" />'
         }]
     }
 });
