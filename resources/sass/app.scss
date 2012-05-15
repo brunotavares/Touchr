@@ -1,7 +1,15 @@
-@import 'sencha-touch/default/all';
+//new color
+$base-color: #9f6cab;
 
-// You may remove any of the following modules that you
-// do not use in order to create a smaller css file.
+//disable what you don't need
+//for a list of variables check http://docs.sencha.com/touch/2-0/#!/api/Global_CSS
+$include-html-style: false;
+$include-default-icons: false;
+$include-form-sliders: false;
+$include-floating-panels: false;
+
+//include only what you need
+@import 'sencha-touch/default/all';
 @include sencha-buttons;
 @include sencha-tabs;
 @include sencha-toolbar;
@@ -11,4 +19,7 @@
 @include sencha-form;
 @include sencha-loading-spinner;
 
+//only icons used
 @include pictos-iconmask('hot');
+@include pictos-iconmask('search');
+@include pictos-iconmask('user');
