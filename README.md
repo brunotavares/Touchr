@@ -8,7 +8,7 @@ A simple app to demonstrate [Sencha Touch 2](http://www.sencha.com/products/touc
 * Use of sencha.io service to resize images, optimizing for mobile screens.
 * Use of listener to filter data stores
 * Use of TabPanel, DataView, Buttons, Toolbar, TextField 
-* Use of custom theme to define new icons
+* Use of custom theme to define new color, new icons and css optimizations
 
 *developed in [Sencha Touch Fast Track Training](http://sencha.com/training)
 
