@@ -8,14 +8,7 @@ Ext.define('TR.store.Users', {
             query: 'photoByUser',
             reader: {
                 type: 'json',
-                successProperty: 'success',
-                rootProperty: function(data) {
-                    if (data.error || data.query.count === 0) {
-                        return [];
-                    } else {
-                        return data.query.results.photo;
-                    }
-                }
+                rootProperty: 'query.results.photo'
             }
         }
     }

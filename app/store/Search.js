@@ -8,14 +8,7 @@ Ext.define('TR.store.Search', {
             query: 'search',
             reader: {
                 type: 'json',
-                successProperty: 'success',
-                rootProperty: function(data) {
-                    if (data.error || data.query.count === 0) {
-                        return [];
-                    } else {
-                        return data.query.results.photo;
-                    }
-                }
+                rootProperty: 'query.results.photo'
             }
         }
    } 
