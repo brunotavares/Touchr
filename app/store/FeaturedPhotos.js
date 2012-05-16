@@ -9,14 +9,7 @@ Ext.define('TR.store.FeaturedPhotos', {
             query: 'featured',
             reader: {
                 type: 'json',
-                successProperty: 'success',
-                rootProperty: function(data) {
-                    if (data.error || data.query.count === 0) {
-                        return [];
-                    } else {
-                        return data.query.results.photo;
-                    }
-                }
+                rootProperty: 'query.results.photo'
             }
         }
     }
