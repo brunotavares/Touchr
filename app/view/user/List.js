@@ -12,7 +12,7 @@ Ext.define('TR.view.user.List', {
             docked: 'top',
             ui: 'light',
             items: [{
-                xtype: 'textfield',
+                xtype: 'searchfield',
                 placeHolder: 'Search by user name...',
                 flex: 1
             }]

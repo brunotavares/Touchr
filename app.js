@@ -9,7 +9,10 @@ Ext.ClassManager.setAlias('Ext.data.proxy.Flickr', 'proxy.flickr');
 
 Ext.application({
     name: 'TR',
-    requires: ['Ext.data.proxy.Flickr'],
+    requires: [
+        'Ext.data.proxy.Flickr',
+        'Ext.field.Search'
+    ],
     stores: [
         'FeaturedPhotos',
         'Search',

@@ -12,7 +12,7 @@ Ext.define('TR.view.search.List', {
             docked: 'top',
             ui: 'light',
             items: [{
-                xtype: 'textfield',
+                xtype: 'searchfield',
                 placeHolder: 'Search by keywords...',
                 flex: 1
             }]
