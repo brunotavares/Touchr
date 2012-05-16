@@ -2,7 +2,7 @@ Ext.define('TR.controller.UserPhotos', {
     extend: 'Ext.app.Controller',
     config: {
         control: {
-            'userlist > toolbar > textfield': {
+            'userlist > toolbar > searchfield': {
                 change: 'onSearchChange',
                 clearicontap: 'onSearchChange'
             }

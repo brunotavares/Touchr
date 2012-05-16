@@ -2,7 +2,7 @@ Ext.define('TR.controller.Search', {
     extend: 'Ext.app.Controller',
     config: {
         control: {
-            'searchlist > toolbar > textfield': {
+            'searchlist > toolbar > searchfield': {
                 change: 'onSearchChange',
                 clearicontap: 'onSearchChange'
             }
