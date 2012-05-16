@@ -13,14 +13,14 @@ Ext.application({
     stores: [
         'FeaturedPhotos',
         'Search',
-        'Users'
+        'UserPhotos'
     ],
     models: [
         'Photo'
     ],
     controllers: [
         'Search',
-        'Users'
+        'UserPhotos'
     ],
     views: [
         'featured.List',
