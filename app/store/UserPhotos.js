@@ -1,4 +1,4 @@
-Ext.define('TR.store.Users', {
+Ext.define('TR.store.UserPhotos', {
     extend: 'Ext.data.Store',
     config: {
         model: 'TR.model.Photo',

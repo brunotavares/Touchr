@@ -1,4 +1,4 @@
-Ext.define('TR.controller.Users', {
+Ext.define('TR.controller.UserPhotos', {
     extend: 'Ext.app.Controller',
     config: {
         control: {
@@ -10,7 +10,7 @@ Ext.define('TR.controller.Users', {
     },
     
     onSearchChange: function(textfield) {
-        var store   = Ext.getStore('Users'),
+        var store   = Ext.getStore('UserPhotos'),
             value   = Ext.String.trim(textfield.getValue());
             
         if(Ext.isEmpty(value)) {
